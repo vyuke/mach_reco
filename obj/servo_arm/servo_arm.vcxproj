@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FFFA31F3-7CA7-4220-8DD3-D02AEC05DD5D}</ProjectGuid>
+    <RootNamespace>servo_arm</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\cores\arduino;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\variants\arduino_101;C:\Users\Dingyang\Documents\Arduino\servo_arm;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\libraries\CurieEEPROM\src;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\libraries\CurieEEPROM\src\utility;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\libraries\Servo;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\libraries\Servo\utility;d:\Program Files (x86)\Arduino\libraries;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sracp1of.tyq\Micro Platforms\default\debuggers;C:\Users\Dingyang\Documents\Arduino\libraries;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\system/libarc32_arduino101/common;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\system/libarc32_arduino101/drivers;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\system/libarc32_arduino101/bootcode;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\system/libarc32_arduino101/framework/include;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\cores\arduino;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\variants\arduino_101;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\libraries\CurieEEPROM\src;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\libraries\Servo;d:\Program Files (x86)\Arduino\libraries;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sracp1of.tyq\Micro Platforms\default\debuggers;C:\Users\Dingyang\Documents\Arduino\libraries;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.4+1.0\1.6.4+1.0\include;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.4+1.0\1.6.4+1.0\include;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.4+1.0\lib\gcc\arc-elf32\4.8.3\include;C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.4+1.0\lib\gcc\arc-elf32\4.8.3\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Dingyang\Documents\Arduino\servo_arm\__vm\.servo_arm.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__ARDUINO_ARC__;F_CPU=32000000L;ARDUINO=10608;ARDUINO_ARC32_TOOLS;ARDUINO_ARCH_ARC32;__CPU_ARC__;CLOCK_SPEED=32;CONFIG_SOC_GPIO_32;CONFIG_SOC_GPIO_AON;INFRA_MULTI_CPU_SUPPORT;CFW_MULTI_CPU_SUPPORT;HAS_SHARED_MEM;__cplusplus=201103L;GCC_VERSION=40803;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="servo_arm.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.servo_arm.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.maximum_size="196608" arduino.upload.speed="" visualmicro.package.name="Intel" arduino.board.property_bag="name=Arduino/Genuino 101&#xD;&#xA;vid.0=0x8087&#xD;&#xA;pid.0=0x0AB6&#xD;&#xA;vid.0x2A03.warning=Uncertified&#xD;&#xA;upload.tool=arduino101load&#xD;&#xA;upload.protocol=script&#xD;&#xA;upload.maximum_size=196608&#xD;&#xA;upload.use_1200bps_touch=true&#xD;&#xA;upload.wait_for_upload_port=false&#xD;&#xA;upload.native_usb=false&#xD;&#xA;upload.params.quiet=-q&#xD;&#xA;upload.params.verbose=-q&#xD;&#xA;build.usb_product=&quot;Arduino 101&quot;&#xD;&#xA;build.mcu=ARCv2EM&#xD;&#xA;build.f_cpu=32000000L&#xD;&#xA;build.board=ARC32_TOOLS&#xD;&#xA;build.core=arduino&#xD;&#xA;build.ldscript=linker_scripts/flash.ld&#xD;&#xA;build.variant=arduino_101&#xD;&#xA;build.variant_system_lib=arc32drv_arduino101&#xD;&#xA;build.vid=0x8087&#xD;&#xA;build.pid=0x0AB6&#xD;&#xA;runtime.ide.path=d:\Program Files (x86)\Arduino&#xD;&#xA;build.system.path=C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5\system&#xD;&#xA;runtime.ide.version=10608&#xD;&#xA;target_package=Intel&#xD;&#xA;target_platform=arc32&#xD;&#xA;runtime.hardware.path=C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32&#xD;&#xA;originalid=intel_arc32_arduino_101&#xD;&#xA;upload.8dot3=false&#xD;&#xA;version=1.0.3&#xD;&#xA;compiler.prefix=arc-elf32&#xD;&#xA;compiler.path={runtime.tools.arc-elf32.path}/bin/&#xD;&#xA;compiler.c.cmd=arc-elf32-gcc&#xD;&#xA;compiler.c.flags=-c -mARCv2EM -mav2em -mlittle-endian -g -Os -Wall -fno-reorder-functions -fno-asynchronous-unwind-tables -fno-omit-frame-pointer -fno-defer-pop -Wno-unused-but-set-variable -Wno-main -ffreestanding -fno-stack-protector -mno-sdata -ffunction-sections -fdata-sections -fsigned-char -MMD -D__ARDUINO_ARC__&#xD;&#xA;compiler.c.elf.cmd=arc-elf32-gcc&#xD;&#xA;compiler.c.elf.flags=-nostartfiles -nodefaultlibs -nostdlib -static -Wl,-X -Wl,-N -Wl,-mARCv2EM -Wl,-marcelf -Wl,--gc-sections&#xD;&#xA;compiler.S.flags=-c -g -x assembler-with-cpp&#xD;&#xA;compiler.cpp.cmd=arc-elf32-g++&#xD;&#xA;compiler.cpp.flags=-c -mARCv2EM -mav2em -mlittle-endian -g -Os -Wall -fno-reorder-functions -fno-asynchronous-unwind-tables -fno-omit-frame-pointer -fno-defer-pop -Wno-unused-but-set-variable -Wno-main -ffreestanding -fno-stack-protector -mno-sdata -ffunction-sections -fdata-sections -fsigned-char -MMD -fno-rtti -fno-exceptions -D__ARDUINO_ARC__ -std=c++11&#xD;&#xA;compiler.ar.cmd=arc-elf32-ar&#xD;&#xA;compiler.ar.flags=rcs&#xD;&#xA;compiler.objcopy.cmd=arc-elf32-objcopy&#xD;&#xA;compiler.objcopy.eep.flags=-O ihex&#xD;&#xA;compiler.elf2hex.flags=-S -O ihex -R .note -R .comment -R COMMON -R .eh_frame&#xD;&#xA;compiler.elf2hex.cmd=arc-elf32-objcopy&#xD;&#xA;compiler.elf2bin.flags=-S -O binary -R .note -R .comment -R COMMON -R .eh_frame&#xD;&#xA;compiler.elf2bin.cmd=arc-elf32-objcopy&#xD;&#xA;compiler.ldflags=&#xD;&#xA;compiler.size.cmd=arc-elf32-size&#xD;&#xA;compiler.define=-DARDUINO=&#xD;&#xA;compiler.strip.cmd={compiler.prefix}-strip&#xD;&#xA;build.extra_flags=&#xD;&#xA;compiler.c.extra_flags=-D__CPU_ARC__ -DCLOCK_SPEED=32 -DCONFIG_SOC_GPIO_32 -DCONFIG_SOC_GPIO_AON -DINFRA_MULTI_CPU_SUPPORT -DCFW_MULTI_CPU_SUPPORT -DHAS_SHARED_MEM &quot;-I{build.system.path}/libarc32_arduino101/common&quot; &quot;-I{build.system.path}/libarc32_arduino101/drivers&quot; &quot;-I{build.system.path}/libarc32_arduino101/bootcode&quot; &quot;-I{build.system.path}/libarc32_arduino101/framework/include&quot;&#xD;&#xA;compiler.c.elf.extra_flags=&#xD;&#xA;compiler.cpp.extra_flags=-D__CPU_ARC__ -DCLOCK_SPEED=32 -DCONFIG_SOC_GPIO_32 -DCONFIG_SOC_GPIO_AON -DINFRA_MULTI_CPU_SUPPORT -DCFW_MULTI_CPU_SUPPORT -DHAS_SHARED_MEM &quot;-I{build.system.path}/libarc32_arduino101/common&quot; &quot;-I{build.system.path}/libarc32_arduino101/drivers&quot; &quot;-I{build.system.path}/libarc32_arduino101/bootcode&quot; &quot;-I{build.system.path}/libarc32_arduino101/framework/include&quot;&#xD;&#xA;compiler.ar.extra_flags=&#xD;&#xA;compiler.elf2hex.extra_flags=&#xD;&#xA;build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DUSBCON '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'&#xD;&#xA;build.usb_manufacturer=&quot;Unknown&quot;&#xD;&#xA;recipe.c.o.pattern=&quot;{compiler.path}{compiler.c.cmd}&quot; {compiler.c.flags} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;&#xD;&#xA;recipe.cpp.o.pattern=&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;&#xD;&#xA;recipe.ar.pattern=&quot;{compiler.path}{compiler.ar.cmd}&quot; {compiler.ar.flags} {compiler.ar.extra_flags} &quot;{archive_file_path}&quot; &quot;{object_file}&quot;&#xD;&#xA;recipe.c.combine.pattern=&quot;{compiler.path}{compiler.c.elf.cmd}&quot; {compiler.c.elf.flags} &quot;-T{build.variant.path}/{build.ldscript}&quot; &quot;-Wl,-Map,{build.path}/{build.project_name}.map&quot; {compiler.c.elf.extra_flags} -o &quot;{build.path}/{build.project_name}.elf&quot; &quot;-L{build.path}&quot; &quot;-L{build.variant.path}&quot; -Wl,--whole-archive &quot;-l{build.variant_system_lib}&quot; -Wl,--no-whole-archive -Wl,--start-group &quot;-l{build.variant_system_lib}&quot; -lc -lm -lgcc {object_files} &quot;{build.path}/{archive_file}&quot;&#xD;&#xA;recipe.objcopy.bin.pattern=&quot;{compiler.path}{compiler.elf2bin.cmd}&quot; {compiler.elf2bin.flags} {compiler.elf2hex.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.bin&quot;&#xD;&#xA;recipe.objcopy.eep.pattern=&quot;{compiler.path}{compiler.strip.cmd}&quot; &quot;{build.path}/{build.project_name}.elf&quot;&#xD;&#xA;recipe.objcopy.hex.pattern=&quot;{compiler.path}{compiler.elf2hex.cmd}&quot; {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.hex&quot;&#xD;&#xA;recipe.output.tmp_file={build.project_name}.hex&#xD;&#xA;recipe.output.save_file={build.project_name}.{build.variant}.hex&#xD;&#xA;recipe.size.pattern=&quot;{compiler.path}{compiler.size.cmd}&quot; -A &quot;{build.path}/{build.project_name}.elf&quot;&#xD;&#xA;recipe.size.regex=Total\s+([0-9]+).*&#xD;&#xA;tools.arduino101load.cmd.path={runtime.tools.arduino101load.path}/arduino101load/arduino101load&#xD;&#xA;tools.arduino101load.upload.params.verbose=verbose&#xD;&#xA;tools.arduino101load.upload.params.quiet=quiet&#xD;&#xA;tools.arduino101load.upload.pattern=&quot;{cmd.path}&quot; &quot;{runtime.tools.arduino101load.path}/x86/bin&quot; {build.path}/{build.project_name}.bin {serial.port} &quot;{upload.verbose}&quot;&#xD;&#xA;vm.platform.root.path=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sracp1of.tyq\Micro Platforms\arduino16x&#xD;&#xA;runtime.tools.arc-elf32.path=C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.4+1.0&#xD;&#xA;runtime.tools.arc-elf32-1.6.4+1.0.path=C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.4+1.0&#xD;&#xA;runtime.tools.arduino101load.path=C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\tools\arduino101load\1.6.4+1.18&#xD;&#xA;runtime.tools.arduino101load-1.6.4+1.18.path=C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\tools\arduino101load\1.6.4+1.18&#xD;&#xA;runtime.tools.avrdude.path=d:\Program Files (x86)\Arduino\hardware\tools\avr&#xD;&#xA;runtime.tools.avrdude-6.0.1-arduino5.path=d:\Program Files (x86)\Arduino\hardware\tools\avr&#xD;&#xA;runtime.tools.avr-gcc.path=d:\Program Files (x86)\Arduino\hardware\tools\avr&#xD;&#xA;runtime.tools.avr-gcc-4.8.1-arduino5.path=d:\Program Files (x86)\Arduino\hardware\tools\avr&#xD;&#xA;ide.hint=For use with Arduino.cc 1.6.2+ ide&#xD;&#xA;ide.location.key=Arduino16x&#xD;&#xA;ide.location.ide.winreg=Arduino 1.6.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.6.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.default.revision_name=1.6.7&#xD;&#xA;ide.default.version=10607&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=arduino.h&#xD;&#xA;ide.exe_name=arduino&#xD;&#xA;ide.platformswithoutpackage=false&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionGTEQ=160&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=http://arduino.cc/en/Main/Software&#xD;&#xA;ide.help.reference.path=reference\arduino.cc\en\Reference&#xD;&#xA;ide.help.reference.path2=reference\www.arduino.cc\en\Reference&#xD;&#xA;ide.help.reference.serial=reference\www.arduino.cc\en\Serial&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ssh.user.name=root&#xD;&#xA;ssh.user.default.password=arduino&#xD;&#xA;ssh.host.wwwfiles.path=/www/sd&#xD;&#xA;build.working_directory={runtime.ide.path}&#xD;&#xA;ide.location.preferences.portable={runtime.ide.path}\portable&#xD;&#xA;ide.location.preferences=%VM_APPDATA_LOCAL%\arduino15\preferences.txt&#xD;&#xA;ide.location.preferences_fallback=%VM_APPDATA_ROAMING%\arduino15\preferences.txt&#xD;&#xA;ide.location.contributions=%VM_APPDATA_LOCAL%\arduino15&#xD;&#xA;ide.location.contributions_fallback=%VM_APPDATA_ROAMING%\arduino15&#xD;&#xA;ide.contributions.boards.allow=true&#xD;&#xA;ide.contributions.boards.ignore_unless_rewrite_found=true&#xD;&#xA;ide.contributions.libraries.allow=true&#xD;&#xA;ide.contributions.boards.support.urls.wiki=https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls&#xD;&#xA;ide.create_platforms_from_boardsTXT.teensy=build.core&#xD;&#xA;ide.appid=arduino16x&#xD;&#xA;location.sketchbook=C:\Users\Dingyang\Documents\Arduino&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;vm.boardsource.path=C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5&#xD;&#xA;runtime.platform.path=C:\Users\Dingyang\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.5&#xD;&#xA;vm.platformname.name=arc32&#xD;&#xA;build.arch=ARC32&#xD;&#xA;" visualmicro.application.name="arduino16x" arduino.build.mcu="ARCv2EM" arduino.upload.protocol="script" arduino.build.f_cpu="32000000L" arduino.board.desc="Arduino/Genuino 101" arduino.board.name="Intel_intel_arc32_arduino_101" arduino.upload.port="COM9" visualmicro.platform.name="arc32" arduino.build.core="arduino" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
