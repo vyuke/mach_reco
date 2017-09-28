@@ -15,7 +15,7 @@
 int A0v, A1v, A2v, A3v, resis;
 int motion_count = 1;
 Servo myservo0, myservo1, myservo2, myservo3, myservo4;
-//动作数据数组，目前为4组，可根据需要修改记录上限。
+//动作数据数组，目前为4组
 int motion_msater[4][5] =   
 {
   {0, 0, 0, 0, 0,},
